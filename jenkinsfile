@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-               sh '//usr//bin//python3//Users//mukund//PycharmProjects//api//jenkins_build.py'
+               sh 'python3 //Users//mukund//PycharmProjects//api//jenkins_build.py'
             }
         }
         stage('Deploy') {
