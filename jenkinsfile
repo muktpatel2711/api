@@ -9,12 +9,12 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+               sh 'jenkins_build.py'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                echo 'Testcase is passed'
             }
         }
     }
